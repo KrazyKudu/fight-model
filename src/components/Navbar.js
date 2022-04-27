@@ -4,20 +4,20 @@ export default function Navbar() {
     return (
     <nav className="nav">
         <h2>
-            <a href="/fightFrontEnd/">Home</a>
+            <a href="/fight-model/">Home</a>
         </h2>
         <ul className="nav-links">
             <li>
-                <a href="/fightFrontEnd/#/fighters">Fighters</a>
+                <a href="/fight-model/#/fighters">Fighters</a>
             </li>          
             <li>
-                <a href="/fightFrontEnd/#/fights">Fights</a>
+                <a href="/fight-model/#/fights">Fights</a>
             </li>
             <li>
-                <a href="/fightFrontEnd/#/picks">Model Picks</a>
+                <a href="/fight-model/#/picks">Model Picks</a>
             </li>
             <li>
-                <a href="/fightFrontEnd/#/about">About</a>
+                <a href="/fight-model/#/about">About</a>
             </li>
         </ul>
     
