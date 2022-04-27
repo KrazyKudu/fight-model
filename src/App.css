@@ -1,0 +1,155 @@
+.App {
+  text-align: center;
+}
+
+.nav{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: left;
+  margin-right: 80px;
+  /* min-height: 10vh; */
+  background: lightgray;
+}
+
+.nav-links{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.searchBar {
+  place-items: center;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul li a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  padding: 5px;
+}
+ul li a:hover {
+  background-color: rgb(190, 190, 190);
+}
+
+h1 a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  padding: 5px;
+}
+
+h1 a:hover {
+  background-color: rgb(190, 190, 190);
+}
+
+.Topline {
+  align-items: center;
+}
+
+.Scatter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+}
+
+.Yselect {
+  display: flex;
+  place-content: left;
+  margin-bottom: 20px;
+  margin-left: 80px;
+}
+
+.Xselect {
+  margin-bottom: 60px;
+  margin-top: 5px;
+}
+
+.PastAccordion {
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
+.Stats {
+  Justify-content: center;
+  background-color: aliceblue;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+table {
+  justify-content: center;
+  
+  
+} 
+
+th, td {
+  align-items: center;
+  align-content: center;
+  border: 1px solid;
+  padding: 6px;
+}
+
+.colorStats {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.redStats {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-right: 250px;
+}
+
+.blueStats {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-left: 250px;
+}
+
+.h3 {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.h4 {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.aboutDescription {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+textarea {
+  resize: none;
+  width: 80%;
+  height: 1100px;
+}
