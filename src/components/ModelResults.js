@@ -47,7 +47,7 @@ export default function ModelResults() {
         return rest;
     });
     console.log(resultArr)
-
+   
     function groupByKey(array, key) {
         return array
           .reduce((hash, obj) => {
@@ -56,11 +56,44 @@ export default function ModelResults() {
           }, {})
      }
 
-    const groupedArr = groupByKey(resultArr, 'event')
-    console.log(groupedArr)
+    const groupedObj = groupByKey(resultArr, 'event')
+    console.log(groupedObj)
 
-    const newArr = Object.entries(groupedArr);
-    console.log(newArr)
+    // const reversedKeys = Object.keys(groupedArr).reverse();
+    
+    // let reversedObj = reversedKeys.forEach(key => {
+    //   let {key: groupedArr[key]} // 👉️ c three, b two, a one
+    // });
+    // console.log(reversedObj)
+
+    // const arrayReverseObj = (obj) => {
+    //   let newArray = []
+    
+    //   Object.keys(obj)
+    //     .sort()
+    //     .reverse()
+    //     .forEach(key => {
+    //       console.log(key)
+    //       newArray.push( {
+    //       'key':key, 
+    //       'id':obj[key].id
+    //       })
+    //     })
+    
+    //   console.log(newArray)
+    //   return newArray  
+    // }
+    
+    // let newArray = arrayReverseObj(groupedArr)
+
+    const newArray = Object.entries(groupedObj);
+    console.log(newArray)
+
+    const revArray = newArray.reverse()
+    console.log(revArray)
+    
+    // const arrayReverseObj =  => Object.keys(groupedArr).sort().reverse().map(key=> ({ ...groupedArr[key], key }) );
+    // console.log(arrayReverseObj)
 
     const [Clicked, setClicked] = useState(false)
 
@@ -76,7 +109,7 @@ export default function ModelResults() {
     <IconContext.Provider value={{color: 'green', size: '25px'}}>
     <AccordionSection>
       <Container>
-        {newArr.map((item, index) => {
+        {revArray.map((item, index) => {
           return (
             <>
             
@@ -107,7 +140,7 @@ export default function ModelResults() {
           </tr>
         </thead>
         <tbody>
-          {newArr[index][1].map((item) => {
+          {revArray[index][1].map((item) => {
             return (
               <tr key={item.fight_id}>
                 <td>{ item.red_name }</td>
