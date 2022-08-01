@@ -7,10 +7,12 @@ import React, { Component, useState } from 'react';
 import styled from 'styled-components'
 import { IconContext } from 'react-icons'
 import { FiPlus, FiMinus } from 'react-icons/fi'
+import { Table, Thread, Tbody, Tr, Th, Td } from 'react-super-responsive-table'
+import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
 
 
 const AccordionSection = styled.div`
-  display: flex;
+  display: flexbox;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -18,7 +20,7 @@ const AccordionSection = styled.div`
   background: #fff;
 `;
 const Container = styled.div`
-  position: absolute;
+ 
   top: 30%;
   `;
 const Wrap = styled.div`

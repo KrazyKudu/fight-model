@@ -141,6 +141,12 @@ th, td {
   padding-top: 40px;
 }
 
+.h5 {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
 .aboutDescription {
   display: flex;
   flex-direction: column;
@@ -156,6 +162,5 @@ textarea {
 }
 
 .resultTable {
-  width: 80%;
-  justify-content: center
+  display: flexbox;
 }

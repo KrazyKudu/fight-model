@@ -11,7 +11,7 @@ export default function DisplayStats(props) {
             "Significant Strikes Per Minute Differential": props.TopResult["Significant Strikes Per Minute Differential"],
             "Total Strikes Per Minute Differential": props.TopResult["Total Strikes Per Minute Differential"],
             "Knock Downs": props.TopResult["Knock Downs"],
-            "Knock Downs Per 100 Strikes Landed": props.TopResult["Knock Downs Per 100 Strikes Landed"],
+            "Knock Downs / Knock Outs Per 100 Strikes Landed": props.TopResult["Knock Downs Per 100 Strikes Landed"],
             "Significant Strikes Landed": props.TopResult["Significant Strikes Landed"],
             "Significant Strikes Attempted": props.TopResult["Significant Strikes Attempted"],
             "Significant Strike Accuracy %": props.TopResult["Significant Strike Accuracy %"],
